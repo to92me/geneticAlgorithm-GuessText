@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 from operator import itemgetter
 from matplotlib import pyplot as plt
