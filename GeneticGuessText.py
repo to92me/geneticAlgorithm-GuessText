@@ -106,14 +106,14 @@ class GuessText:
         best_fitness = best_match[0]
         best_individual = best_match[1]
 
+        fits = [f for f, ch in fits_populations]
+
+        best = max(fits)
+        worst = min(fits)
+        average = sum(fits) / len(fits)
+
         if self.counter % 1 == 0:
-            # best_match = list(sorted(fits_populations))[-1][1]
-            fits = [f for f, ch in fits_populations]
-
-            best = max(fits)
-            worst = min(fits)
-            average = sum(fits) / len(fits)
-
+           
             self.fitness_best.append((self.counter, best))
             self.fitness_worst.append((self.counter,  worst))
             self.fitness_average.append((self.counter, average))
@@ -124,6 +124,7 @@ class GuessText:
             pass
 
         if best_fitness == 0:
+            print("[G %3d] score=(%4d, %4d, %4d): %r" % (self.counter, best, average, worst, self.chromo2text(best_individual)))
             return True
         return self.counter >= self.limit
 
