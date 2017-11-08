@@ -1,4 +1,4 @@
-# Text guessing with Genetic algorithm 
+# Text guessing with Genetic algorithm
 >> Example of genetic algorithm used to guess text
 
 >> Genetic algorithms are inspired by Darwin's theory of evolution. Solution to a problem solved by genetic algorithms is evolved.
@@ -17,25 +17,22 @@ The algorithm is started with a set of solutions (represented by chromosomes) ca
 5. [Test] If the end condition is satisfied, stop, and return the best solution in current population
 6. [Loop] Go to step 2
 
-## Text representation 
-The text is represented as numbers by asci table and every individual in a population is the same length as target text. 
+## Text representation
+The text is represented as numbers by asci table and every individual in a population is the same length as target text.
 
 
 ## Dependencies
-1. python3 
-    ```bash 
+1. python3
+    ```bash
     sudo apt-get install python3
     ```
-    ```bash 
+    ```bash
     sudo apt-get install python3-pip
     ```
 2. matplotlib
-    ```bash 
-    sudo apt-get install python3-pip
-    ```
-    ```bash 
+    ```bash
     pip3 install matplotlib
     ```
-    
-## Run 
-python3 main.py "text to be guessed" 
+
+## Run
+python3 main.py "text to be guessed"
